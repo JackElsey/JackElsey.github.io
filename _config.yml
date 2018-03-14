@@ -1,0 +1,3 @@
+name: Jack Elsey
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
