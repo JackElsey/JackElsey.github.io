@@ -2,8 +2,17 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
+			
+			<!-- favicon -->
+			<link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.svg"/>
+			
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			
+			<!-- Google Analytics -->
+			{% if site.google_analytics and jekyll.environment == 'production' %}
+			{% include analytics.html %}
+			{% endif %}
 		</head>
 		<body>
 			<nav>
